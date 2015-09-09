@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/dataLayout"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/custom_colorPrimary">
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/def_distance_no"
+        android:textColor="@color/custom_textColorPrimary"
+        android:textSize="30sp"
+        android:id="@+id/distanceNumber"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/km"
+        android:textColor="@color/custom_textColorSecondary"
+        android:textSize="20sp"
+        android:id="@+id/distanceKm"
+        android:layout_alignBottom="@+id/distanceNumber"
+        android:layout_toRightOf="@+id/distanceNumber"
+        android:layout_toEndOf="@+id/distanceNumber" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/custom_colorLines"
+        android:id="@+id/line1"
+        android:layout_below="@+id/distanceNumber"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignEnd="@+id/centerLine"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/def_distance_no"
+        android:textColor="@color/custom_textColorPrimary"
+        android:textSize="30sp"
+        android:id="@+id/speedNumber"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/line1"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ms"
+        android:textColor="@color/custom_textColorSecondary"
+        android:textSize="20sp"
+        android:id="@+id/speedMs"
+        android:layout_alignBottom="@+id/speedNumber"
+        android:layout_toRightOf="@+id/speedNumber"
+        android:layout_toEndOf="@+id/speedNumber" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/custom_colorLines"
+        android:id="@+id/line2"
+        android:layout_below="@+id/speedNumber"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignEnd="@+id/centerLine"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_timer"
+        android:textColor="@color/custom_textColorPrimary"
+        android:textSize="30sp"
+        android:id="@+id/time"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="false" />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_colorLines"
+        android:id="@+id/centerLine"
+        android:layout_alignTop="@+id/distanceNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/time" />
+
+    <ImageButton
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:id="@+id/playButton"
+        android:background="@null"
+        android:src="@drawable/play_button_selector"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/centerLine"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stopButton"
+        android:background="@null"
+        android:src="@drawable/stop_button_selector"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/centerLine"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

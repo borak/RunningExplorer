@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Running Explorer</string>
+    <string name="title_activity_maps">Your current journey</string>
+    <string name="title_session_list_activity">Previous journeys</string>
+    <string name="title_activity_welcome">Running Explorer</string>
+    <string name="no_saved_sessions">You do not currently have any saved sessions.</string>
+    <string name="new_session">Create new session</string>
+    <string name="remember_your_journey">Remember your journey</string>
+    <string name="snjourney">Start a new journey</string>
+    <string name="ojourney">Overview journeys</string>
+    <string name="km">km</string>
+    <string name="def_speed">12.3</string>
+    <string name="ms">m/s</string>
+    <string name="def_time">00:12:34</string>
+    <string name="def_label">test</string>
+    <string name="viewp">View photos</string>
+    <string name="viewm">View in map</string>
+    <string name="def_distance">10 km</string>
+    <string name="def_timer">00:13:12</string>
+    <string name="def_no_p">0 photos</string>
+    <string name="def_date">24 August 20:16</string>
+    <string name="def_distance_no">0.0</string>
+    <string name="start_timer">00:00:00</string>
+</resources>

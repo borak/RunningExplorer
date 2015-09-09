@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_empty_text"
+        android:gravity="center"
+        android:text="@string/no_saved_sessions"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp" />
+
+    <Button
+        android:id="@+id/list_empty_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/new_session"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/list_empty_text"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

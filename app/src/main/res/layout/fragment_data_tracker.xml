@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content">
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:textColor="@color/custom_textColorPrimary"
+        android:textSize="30sp"
+        android:id="@+id/distanceNumber"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/km"
+        android:textColor="@color/custom_textColorSecondary"
+        android:textSize="20sp"
+        android:id="@+id/distanceKm"
+        android:layout_alignBottom="@+id/distanceNumber"
+        android:layout_toRightOf="@+id/distanceNumber"
+        android:layout_toEndOf="@+id/distanceNumber" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/custom_colorLines"
+        android:id="@+id/line1"
+        android:layout_below="@+id/distanceNumber"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/def_speed"
+        android:textColor="@color/custom_textColorPrimary"
+        android:textSize="30sp"
+        android:id="@+id/speedNumber"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/line1"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ms"
+        android:textColor="@color/custom_textColorSecondary"
+        android:textSize="20sp"
+        android:id="@+id/speedMs"
+        android:layout_alignBottom="@+id/speedNumber"
+        android:layout_toRightOf="@+id/speedNumber"
+        android:layout_toEndOf="@+id/speedNumber" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/custom_colorLines"
+        android:id="@+id/line2"
+        android:layout_below="@+id/speedNumber"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/def_time"
+        android:textColor="@color/custom_textColorPrimary"
+        android:textSize="30sp"
+        android:id="@+id/time"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
